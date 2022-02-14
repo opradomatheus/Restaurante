@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html, body
@@ -32,8 +33,9 @@ header
     z-index: 999;
 }
 
-.headerOnScroll
+.menuFixo
 {
+    transition: 0.5s ease;
     background-color: #ad0000;
     box-shadow: 3px 3px 3px #0000002f;
 }
@@ -44,11 +46,13 @@ header > p
     font-size: 3em;
     padding-left: 150px;
     color: #ffffff;
+    user-select: none;
 }
 
 header > nav
 {
     padding-right: 100px;
+    user-select: none;
 }
 
 nav > ul > li
@@ -62,10 +66,11 @@ nav > ul > li > a
     text-decoration: none;
     text-transform: uppercase;
     font-family: var(--ff1);
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 600;
     color: rgb(255, 255, 255);
     z-index: 999;
+
 }
 
 nav > ul > li > a:hover
@@ -101,7 +106,7 @@ section.cardapio
 {
     padding-top: 90px;
     height: 100vh;
-    background-color: #ad0000;
+    background-color: #ffffff;
 }
 
 
@@ -109,7 +114,7 @@ section.cardapio > h1
 {
     text-align: center;
     text-transform: uppercase;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: var(--ff1);
     font-size: 3em;
 
