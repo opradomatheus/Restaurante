@@ -77,7 +77,7 @@ nav > ul > li > a:hover
 section.home
 {  
     height: 100vh;
-    background-image: url(/Img/rest.png);
+    background-image: url(../Img/rest.png);
     background-size: cover;
     background-position: center bottom;
 }
@@ -128,7 +128,7 @@ div.img
 {   
     height: 50%;
     width: 100%;
-    background-image: url(/Img/rest.png);
+    background-image: url(../Img/rest.png);
     background-position: center top;
     display: flex;
     flex-direction: column;
