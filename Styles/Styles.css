@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+ :root
+{
+    --ff1: 'Oswald', sans-serif;
+    /* --ff2: */
+} 
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    min-height: 100vh;
+}
+
+header
+{
+    background-color: #6d0c0c;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+}
+
+.headerOnScroll
+{
+    background-color: #ad0000;
+    box-shadow: 3px 3px 3px #0000002f;
+}
+
+header > p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    padding-left: 150px;
+    color: #ffffff;
+}
+
+header > nav
+{
+    padding-right: 100px;
+}
+
+nav > ul > li
+{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav > ul > li > a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--ff1);
+    font-size: 1.2em;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    z-index: 999;
+}
+
+nav > ul > li > a:hover
+{
+    color: rgb(255, 217, 0);
+    transition: 0.4s ease;
+}
+
+section.home
+{  
+    height: 100vh;
+    background-image: url(/Img/rest.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    filter: grayscale(100%) brightness(40%);
+}
+
+section.quem-somos
+{
+    padding-top: 50px;
+    height: 100vh;
+}
+
+section.quem-somos > h1
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--ff1);
+    font-size: 3em;
+
+}
+
+section.cardapio
+{
+    padding-top: 90px;
+    height: 100vh;
+    background-color: #ad0000;
+}
+
+
+section.cardapio > h1
+{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: var(--ff1);
+    font-size: 3em;
+
+}
+
+footer
+{
+    height: 90vh;
+    width: 100%;
+    background-color: #252627;
+    display: flex;
+    flex-direction: column;
+}
+
+div.img
+{   
+    height: 50%;
+    width: 100%;
+    background-image: url(/Img/rest.jpg);
+    background-position: center top;
+    filter: grayscale(100%) brightness(40%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ff1);
+    font-size: 1.8em;
+}
+
+.img > h1
+{
+    text-align: center;
+    color: white;
+}
+
+.img > a
+{
+    color: white;
+    text-decoration: none;
+}
