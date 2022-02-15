@@ -33,7 +33,7 @@ header
     z-index: 999;
 }
 
-header > img
+.sl
 {
     width: 100px;
     height: 100px;
@@ -104,7 +104,7 @@ section.quem-somos > h1
 
 
 }
-
+ 
 section.cardapio
 {
     padding-top: 80px;
