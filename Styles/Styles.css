@@ -40,7 +40,8 @@ header
     box-shadow: 3px 3px 3px #0000002f;
 }
 
-.logo{
+header.logo
+{
     width: 100px;
     margin-left: 150px;
 }
@@ -129,7 +130,7 @@ div.container-square
     height: 80vh;
 }
 
-.container-square > .square1, .square2
+.container-square > .square1 
 {
     width: 500px;
     height: 600px;
@@ -142,6 +143,21 @@ div.container-square
     display: flex;
     flex-direction: column;
 }
+
+.container-square > .square2
+{
+    width: 500px;
+    height: 600px;
+    
+    background-color: red;
+    border-radius: 5px;
+
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
 
 .square1 > h2
 {
