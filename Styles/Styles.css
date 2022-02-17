@@ -1,24 +1,25 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 
  :root
 {
     --ff1: 'Oswald', sans-serif;
-    /* --ff2: */
+    --ff2: 'Lobster', cursive;
 } 
 
 *
 {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 html, body
 {
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
 header
@@ -81,52 +82,125 @@ nav > ul > li > a:hover
 
 section.home
 {  
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../Img/rest.png);
     background-size: cover;
     background-position: center bottom;
     position: relative;
 }
 
-
-.home > .decomer
+.prato-dia
 {
     position: absolute;
-    left: 10%;
-    top: 150px;
-    width: 500px;
-    z-index: 99;
+    top: 17%;
+    left: 38%;
+
+    font-family: var(--ff2);
+    font-size: 52px;
+
+    text-transform: capitalize;
+
+    color: white;
+
+    background-color: rgba(252, 0, 0, 0.733);
+
+    padding: 0px 50px 5px 50px;
+
+    border-radius: 0 0 50px 50px;
+}
+
+
+
+.decomer
+{
+    position: absolute;
+    left: 32%;
+    top: 280px;
+    width: 550px;
+    z-index: 3;
+}
+
+.ingredientes
+{
+    position: absolute;
+    top: 30%;
+    left: 33%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(202, 0, 0);    
+
+    height: 300px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+}
+
+
+
+.ingredientes li{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    text-transform: capitalize
 }
 
 .preco
 {
     position: absolute;
-    left: 30%;
-    top: 390px;
-    height: 150px;
-    width: 300px;
+    top: 37%;
+    left: 57%;
 
-    background-color: yellow;
-    border-radius: 20px;
+    background-color: rgba(251, 255, 0, 0.836);
 
-    z-index: 100;
-    opacity: 90%;
+    width: 180px;
+    height: 80px;
+
+    border-radius: 0px 50px 0px 50px;
 
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    z-index: 4;
 }
 
-.preco h2
+
+.preco span
 {
-    font-family: Arial, Helvetica, sans-serif;
-    align-self: center;
-    font-size: 72px;
+    color: rgb(255, 0, 0);
+    font-family: var(--ff1);
+    font-size: 40px;
+
+    font-weight: 600;
+}
+
+
+
+.baccodecomer
+{
+
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+
+    top: 17%;
+    left: 18%;
+
+    border-radius: 20px;
 }
 
 section.quem-somos
 {
     padding-top: 80px;
-    height: 100vh;
+    min-height: 100vh;
 
     background-color: rgb(236, 236, 236);
 }
@@ -144,7 +218,7 @@ section.quem-somos > h1
 section.cardapio
 {
     padding-top: 80px;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #ffffff;
 
     display: flex;
@@ -165,7 +239,7 @@ section.cardapio > h1
 .container-cardapio
 {
     width: 900px;
-    height: 450px;
+    height: 550px;
 
     border-radius: 10px;
 
@@ -177,6 +251,30 @@ section.cardapio > h1
     flex-direction: row;
 }
 
+.container-cardapio span
+{
+    align-self: center;
+
+    margin-top: 10px;
+
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    background-color: white;
+
+    text-transform: uppercase;
+
+    font-family: var(--ff1);
+}
+
+.container-cardapio .logo
+{
+   width: 150px;
+   align-self: center;
+}
+
 
 
 .a
@@ -184,7 +282,7 @@ section.cardapio > h1
     height: 100%;
     width: 300px;
 
-    background-color: rgba(218, 6, 6, 0.911);
+    background-color: #921a1a;
 
     border-radius: 10px 0 0 10px;
 
@@ -194,10 +292,46 @@ section.cardapio > h1
 
 .burger
 {
-    padding-top: 30px;
-    width: 220px;
+    padding-top: 20px;
+    width: 180px;
     align-self: center;
 }
+
+.container-menu
+{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    
+}
+
+.container-menu h2
+{
+    font-family: var(--ff2);
+    font-size: 42px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+    color: yellow;
+}
+
+.container-menu p
+{
+    font-family: var(--ff2);
+    font-size: 24px;
+
+    letter-spacing: 1px;
+    color: white;
+
+    text-transform: capitalize;
+}
+
 
 .ul-cardapio
 {
@@ -220,7 +354,16 @@ li
     height: 100%;
     width: 300px;
 
-    background-color: green;
+    background-color: #303128;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.b .alaminuta
+{
+    width: 120px;
+    align-self: center;
 }
 
 .c
@@ -228,7 +371,7 @@ li
     height: 100%;
     width: 300px;
 
-    background-color: blue;
+    background-color:#921a1a;
 
     border-radius: 0 10px 10px 0;
 }
