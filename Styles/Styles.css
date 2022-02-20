@@ -25,7 +25,7 @@ html, body
 header
 {
     background-color: #ff000000;
-    height: 80px;
+    height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -34,11 +34,11 @@ header
     z-index: 999;
 }
 
-.sl
+.logo-header
 {
-    width: 100px;
-    height: 100px;
-    margin-left: 200px;
+    width: 80px;
+    height: 80px;
+    margin-left: 180px;
 }
 
 .menuFixo
@@ -67,7 +67,7 @@ nav > ul > li > a
     text-decoration: none;
     text-transform: uppercase;
     font-family: var(--ff1);
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 600;
     color: rgb(255, 255, 255);
     z-index: 999;
@@ -153,7 +153,7 @@ section.home
     top: 37%;
     left: 57%;
 
-    background-color: rgba(251, 255, 0, 0.836);
+    background-color: #fbff00;
 
     width: 180px;
     height: 80px;
@@ -434,3 +434,47 @@ div.img
     font-size: 1.3em;
     padding-right: 10px;
 }
+
+.referencias
+{
+    display: flex;
+    flex-direction: row;
+
+    height: 350px;
+}
+
+.contato
+{
+    height: 200px;
+}
+
+.final
+{
+    height: 50px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.final p
+{
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 635px)
+{
+  
+} */
