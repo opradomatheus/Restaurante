@@ -36,8 +36,8 @@ header
 
 .logo-header
 {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     margin-left: 180px;
 }
 
@@ -283,7 +283,7 @@ section.cardapio > h1
     width: 300px;
 
     background-color: #921a1a;
-
+    background-image: url(../Img/redpaper.png);
     border-radius: 10px 0 0 10px;
 
     display: flex;
@@ -293,7 +293,8 @@ section.cardapio > h1
 .burger
 {
     padding-top: 20px;
-    width: 180px;
+    height: 180px;
+    width: 230px;
     align-self: center;
 }
 
@@ -355,6 +356,8 @@ li
     width: 300px;
 
     background-color: #303128;
+    background-image: url(../Img/greypaper.png);
+    
 
     display: flex;
     flex-direction: column;
@@ -373,6 +376,7 @@ li
     width: 300px;
 
     background-color:#921a1a;
+    background-image: url(../Img/redpaper.png);
 
     border-radius: 0 10px 10px 0;
 
@@ -386,8 +390,6 @@ li
     width: 250px;
     align-self: center;
     margin-top: 40px;
-    margin-bottom: 30px;
-
 }
 
 footer
