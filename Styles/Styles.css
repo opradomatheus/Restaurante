@@ -257,6 +257,38 @@ section.cardapio > h1
     flex-direction: row;
 }
 
+@media screen and (max-width: 940px)
+{
+    .container-cardapio
+    {
+        flex-direction: column;
+        height: 1800px;
+        width: 450px;
+        
+        margin-bottom: 20px;
+    }
+
+    .a
+    {
+        width: 450px;
+        border-radius: 10px 10px 0px 0px !important;
+    }
+
+    .b
+    {
+        width: 450px;
+    }
+
+    .c
+    {
+        width: 450px;
+        border-radius: 0px 0px 10px 10px !important;
+    }
+
+}
+
+
+
 .container-cardapio span
 {
     align-self: center;
@@ -286,7 +318,7 @@ section.cardapio > h1
 .a
 {
     height: 100%;
-    width: 300px;
+    min-width: 300px;
 
     background-color: #921a1a;
     background-image: url(../Img/redpaper.png);
@@ -359,7 +391,7 @@ li
 .b
 {
     height: 100%;
-    width: 300px;
+    min-width: 300px;
 
     background-color: #303128;
     background-image: url(../Img/greypaper.png);
@@ -379,7 +411,7 @@ li
 .c
 {
     height: 100%;
-    width: 300px;
+    min-width: 300px;
 
     background-color:#921a1a;
     background-image: url(../Img/redpaper.png);
