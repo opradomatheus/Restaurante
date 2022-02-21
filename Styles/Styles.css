@@ -46,11 +46,12 @@ header
 
 .menuFixo
 {
-    transition: 0.7s ease;
     /* background-color: #7c0909; */
     background-image: url(../Img/redpaper.png);
     background-size: cover;
     box-shadow: 3px 3px 3px #0000002f;
+
+    transition-duration: 2s;
 }
 
 
@@ -149,7 +150,7 @@ section.home
     width: 550px;
     z-index: 3;
 
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: slidein;
 }
 
@@ -186,7 +187,7 @@ section.home
 
     border-radius: 10px;
 
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: slidein;
 }
 
@@ -232,7 +233,7 @@ section.home
 
     z-index: 4;
 
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: slidein;
 }
 
