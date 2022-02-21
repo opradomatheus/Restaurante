@@ -7,6 +7,9 @@
 {
     --ff1: 'Oswald', sans-serif;
     --ff2: 'Lobster', cursive;
+
+
+    --header-height: 60px
 } 
 
 *
@@ -25,7 +28,7 @@ html, body
 header
 {
     background-color: #ff000000;
-    height: 60px;
+    height: var(--header-height);
     width: 100%;
     display: flex;
     align-items: center;
@@ -94,6 +97,8 @@ section.home
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    padding-top: var(--header-height);
 }
 
 .baccodecomer
