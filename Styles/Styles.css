@@ -239,6 +239,8 @@ section.cardapio > h1
     color: rgb(0, 0, 0);
     font-family: var(--ff1);
     font-size: 2.4em;
+
+    margin-bottom: 20px;
 }
 
 
@@ -256,37 +258,6 @@ section.cardapio > h1
     display: flex;
     flex-direction: row;
 }
-
-@media screen and (max-width: 940px)
-{
-    .container-cardapio
-    {
-        flex-direction: column;
-        height: 1800px;
-        width: 450px;
-        
-        margin-bottom: 20px;
-    }
-
-    .a
-    {
-        width: 450px;
-        border-radius: 10px 10px 0px 0px !important;
-    }
-
-    .b
-    {
-        width: 450px;
-    }
-
-    .c
-    {
-        width: 450px;
-        border-radius: 0px 0px 10px 10px !important;
-    }
-
-}
-
 
 
 .container-cardapio span
@@ -508,13 +479,40 @@ div.img
 }
 
 
+/* Responsividade */
 
 
 
-
-
-
-/* @media screen and (max-width: 635px)
+@media screen and (max-width: 940px)
 {
-  
-} */
+    .container-cardapio
+    {
+        flex-direction: column;
+        height: 1800px;
+        width: 450px;
+    
+    }
+
+    .a
+    {
+        width: 450px;
+        border-radius: 0px !important;
+    }
+
+    .b
+    {
+        width: 450px;
+    }
+
+    .c
+    {
+        width: 450px;
+        border-radius: 0px !important;
+    }
+
+    .img h1
+    {
+        font-size: 1.3em;
+    }
+
+}
