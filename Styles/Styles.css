@@ -32,7 +32,7 @@ header
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: fixed;
     z-index: 999;
 }
@@ -41,7 +41,6 @@ header
 {
     width: 70px;
     height: 70px;
-    margin-left: 180px;
 }
 
 .menuFixo
@@ -53,7 +52,7 @@ header
 
     transition-duration: 2s;
 }
-
+/* 
 
 
 header > nav
@@ -84,7 +83,7 @@ nav > ul > li > a:hover
 {
     color: rgb(255, 217, 0);
     transition: 0.4s ease;
-}
+} */
 
 section.home
 {  
@@ -581,3 +580,221 @@ div.img
     }
 
 }
+
+  
+  .menuFixo {
+    position: fixed;
+    top: 0px;
+    background-color: var(--3color);
+  }
+  
+  .logo {
+    width: 70px;
+    height: 60px;
+    margin-right: 5rem;
+  }
+  
+  .txlogo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-right: 0.5rem;
+    font-size: 2.5rem;
+    color: var(--3color);
+  }
+  
+  .logoFixo {
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  nav ul > li {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  nav li > a {
+    padding: 20px;
+    font-family: var(--ff1);
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+
+  
+  @media screen and (max-width: 1050px) {
+    header {
+      justify-content: space-around;
+      height: var(--header-height);
+    }
+  
+    .titulo-area{
+      font-size: 2.5rem;
+    }
+  
+    .logo{
+      margin-top: 5px;
+      height: 45px;
+      width: 50px;
+    }
+    
+    .txlogo{
+      margin-left: -2rem;
+    }
+  
+    .fundo-h1{
+      font-size: 3.5rem;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .fundo-p{
+      margin-top: -30px;
+      font-size: 0.9rem;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav__menu {
+            font-size: 1.2rem;
+            position: fixed;
+            top: var(--header-height);
+            right: -100%;
+            width: 100%;
+            height: 40%;
+            background-color: #000000f6;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+    .nav__item{
+        margin: 1rem;
+    }
+  
+    .nav__item > a {
+      font-size: 1.5rem;
+    }
+  
+    .nav__link {
+      position: relative;
+      color: #fff;
+    }
+  
+    .nav__link:hover {
+      position: relative;
+    }
+  
+    .nav__link:hover {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 0.18rem;
+      left: 0;
+      top: 2rem;
+      background-color: black;
+    }
+  
+    .nav__toggle {
+      margin-right: -2rem; 
+      margin-top: 5px;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  
+    .burgerFixo{
+        color: #ffffff;
+    }
+  
+    .nav__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0;
+    }
+  
+  
+    /*ACTIVE MENU*/
+  
+    .active::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 0.18rem;
+      left: 0;
+      top: 2rem;
+      background-color: var(--color1);
+    }
+  
+    /*SHOW MENU*/
+  
+    .show {
+      right: 0;
+    }
+  }
+  
+  @media screen and (min-width: 1050px) {
+  
+  
+    .nav__item {
+      margin-bottom: 0;
+  
+    }
+  
+    .nav__toggle {
+      display: none;
+    }
+  
+    .nav__link {
+      color: var(--color2);
+    }
+  
+    .nav__menu{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  
+  }
+  
+  
+  @media screen and (max-width: 430px){
+    header{
+      justify-content: space-around;
+    }
+    
+    .txlogo{
+      margin-left: -20px;
+    }
+  
+    .nav__toggle {
+      margin-right: -1rem;
+  }
+  }
+  
+  
+  @media screen and (max-width: 390px){
+    header{
+      justify-content: space-around;
+    }
+
+    .logo-header
+    {
+        margin: 0;
+    }
+    
+    .txlogo{
+      margin-left: 5px;
+    }
+  
+    .nav__toggle {
+      margin-right: 5px;
+  }
+  
+  }

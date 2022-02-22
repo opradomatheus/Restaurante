@@ -1,197 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Link que conecta os estilos a página -->
 
-    <link rel="stylesheet" href="Styles/Styles.css">
+    <link rel="stylesheet" href="Styles/Styles.css" />
 
     <!-- Link para utilizar icones do FontAwesome -->
 
-    <script src="https://kit.fontawesome.com/43b758664e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/43b758664e.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Rango Bom - Seu restaurante preferido.</title>
-</head>
+  </head>
 
-<body>
-    <header id="menu" scroll="headerMuda">
+  <body>
+    <header id="menu" scroll="headerMuda()">
 
-        <a href="#home"><img class="logo-header" src="Img/prato.png" alt=""></a>
+        <img class="logo-header" src="Img/prato.png" alt="" />
 
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#quem">Quem somos</a></li>
-                <li><a href="#cardapio">Cardápio</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a class="reserva" href="">Reservas</a></li>
-            </ul>
-        </nav>
+
+      <nav class="nav">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#home">Home</a></li>
+            <li class="nav__item"><a href="#quem">Quem somos</a></li>
+            <li class="nav__item"><a href="#contato">Contato</a></li>
+            <li class="nav__item"><a href="">Reservas</a></li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i id="toggle" class="fas fa-bars"></i>
+        </div>
+      </nav>
     </header>
 
     <section id="home" class="home">
+      <div class="baccodecomer">
+        <h2 class="prato-dia">segunda - feira</h2>
 
+        <img class="decomer" src="Img/alaminuta.png" />
 
-        <div class="baccodecomer">
-
-
-
-            <h2 class="prato-dia">
-                segunda - feira
-            </h2>
-
-            <img class="decomer" src="Img/alaminuta.png">
-
-            <div class="ingredientes">
-                <ul>
-                    <li>arroz</li>
-                    <li>feijão</li>
-                    <li>bife de carne</li>
-                    <li>ovo</li>
-                    <li>fritas</li>
-                    <li>salada</li>
-                </ul>
-            </div>
-
-            <div class="preco">
-                <span>R$ 18,50</span>
-            </div>
-
+        <div class="ingredientes">
+          <ul>
+            <li>arroz</li>
+            <li>feijão</li>
+            <li>bife de carne</li>
+            <li>ovo</li>
+            <li>fritas</li>
+            <li>salada</li>
+          </ul>
         </div>
 
+        <div class="preco">
+          <span>R$ 18,50</span>
+        </div>
+      </div>
     </section>
 
     <section id="quem" class="quem-somos">
-        <h1>Quem somos</h1>
+      <h1>Quem somos</h1>
     </section>
 
     <section id="cardapio" class="cardapio">
-        <h1>Cardápio</h1>
+      <h1>Cardápio</h1>
 
-        <div class="container-cardapio">
-            <div class="a">
+      <div class="container-cardapio">
+        <div class="a">
+          <div class="container-menu">
+            <h2>Menu</h2>
+            <p>rango bom</p>
+          </div>
 
+          <span> burgers </span>
 
-                <div class="container-menu">
-                    <h2>
-                        Menu
-                    </h2>
-                    <p>
-                        rango bom
-                    </p>
-                </div>
+          <ul class="ul-cardapio">
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+          </ul>
 
-                <span>
-                    burgers
-                </span>
-
-                <ul class="ul-cardapio">
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-
-                </ul>
-
-                <img class="burger" src="Img/burger.png" alt="">
-
-            </div>
-
-            <div class="b">
-
-                <img class="alaminuta" src="Img/prato.png" alt="">
-
-                <img class="burger" src="Img/alaminuta.png" alt="">
-
-                <span>
-                    especiais
-                </span>
-
-                <ul class="ul-cardapio">
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                </ul>
-            </div>
-
-            <div class="c">
-                <img class="condimento" src="Img/heinz.png" alt="">
-
-                <span>
-                    especiais
-                </span>
-
-                <ul class="ul-cardapio">
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-
-
-                </ul>
-
-                <span>
-                    especiais
-                </span>
-
-                <ul class="ul-cardapio">
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                    <li>BURGER .................... R$20,00</li>
-                </ul>
-
-
-            </div>
+          <img class="burger" src="Img/burger.png" alt="" />
         </div>
+
+        <div class="b">
+          <img class="alaminuta" src="Img/prato.png" alt="" />
+
+          <img class="burger" src="Img/alaminuta.png" alt="" />
+
+          <span> especiais </span>
+
+          <ul class="ul-cardapio">
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+          </ul>
+        </div>
+
+        <div class="c">
+          <img class="condimento" src="Img/heinz.png" alt="" />
+
+          <span> especiais </span>
+
+          <ul class="ul-cardapio">
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+          </ul>
+
+          <span> especiais </span>
+
+          <ul class="ul-cardapio">
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+            <li>BURGER .................... R$20,00</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <footer id="contato">
-        <div class="img">
-            <h1>#vemprarangobom</h1>
-            <a href=""><i class="fab fa-facebook"></i>@rangobom</a>
-            <a href=""><i class="fab fa-instagram"></i>@rangobom</a>
-        </div>
+      <div class="img">
+        <h1>#vemprarangobom</h1>
+        <a href=""><i class="fab fa-facebook"></i>@rangobom</a>
+        <a href=""><i class="fab fa-instagram"></i>@rangobom</a>
+      </div>
 
-        <div class="referencias">
+      <div class="referencias">
+        <div class="contatos"></div>
 
-            <div class="contatos">
+        <div class="localizacao"></div>
+      </div>
 
-            </div>
-
-            <div class="localizacao">
-
-            </div>
-        </div>
-
-
-        <div class="final">
-            <p>&copy 2022 ATMMS.</p>
-        </div>
-
+      <div class="final">
+        <p>&copy 2022 ATMMS.</p>
+      </div>
     </footer>
 
     <script src="Js/Scripts.js"></script>
-
-</body>
-
+  </body>
 </html>
