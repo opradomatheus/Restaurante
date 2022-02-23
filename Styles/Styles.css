@@ -119,7 +119,7 @@ section.home
 .prato-dia
 {
     position: absolute;
-    left: 315px;
+    left: 290px;
 
     font-family: var(--ff2);
     font-size: 52px;
@@ -737,7 +737,7 @@ div.img
     }
   }
   
-  @media screen and (min-width: 1050px) {
+  @media screen and (max-width: 1050px) {
   
   
     .nav__item {
@@ -759,6 +759,46 @@ div.img
       justify-content: center;
       align-items: center;
     }
+
+.baccodecomer
+{
+
+ width: 850px; 
+ height: 600px;
+
+}
+
+.prato-dia
+{
+
+    left: 225px;
+
+    font-family: var(--ff2);
+    font-size: 52px;
+}
+
+
+
+.decomer
+{
+
+    top: 150px;
+    left: 160px;
+    width: 550px;
+    z-index: 3;
+}
+
+.ingredientes
+{
+    left: 170px;
+}
+
+.preco
+{
+    left: 590px;
+}
+
+
   
   
   }
