@@ -27,7 +27,9 @@ html, body
 
 header
 {
-    background-color: #ff000000;
+    background-image: url(../Img/redpaper.png);
+    background-size: cover;
+    box-shadow: 3px 3px 3px #0000002f;
     height: var(--header-height);
     width: 100%;
     display: flex;
@@ -43,15 +45,6 @@ header
     height: 70px;
 }
 
-.menuFixo
-{
-    /* background-color: #7c0909; */
-    background-image: url(../Img/redpaper.png);
-    background-size: cover;
-    box-shadow: 3px 3px 3px #0000002f;
-
-    transition-duration: 2s;
-}
 /* 
 
 
@@ -772,7 +765,7 @@ div.img
 
     section.home
     {
-      height: 70vh;
+      height: 60vh;
     }
     
   }

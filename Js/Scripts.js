@@ -39,15 +39,15 @@ function removeMenu()
 
 
 
-(function headerMuda() {
-    var menu = document.getElementById("menu")
+// (function headerMuda() {
+//     var menu = document.getElementById("menu")
   
-    window.addEventListener("scroll", function () {
-        if (scrollY > 0)
-        menu.classList.add("menuFixo")
-        else
-        menu.classList.remove("menuFixo")
-    })
-  })()
+//     window.addEventListener("scroll", function () {
+//         if (scrollY > 0)
+//         menu.classList.add("menuFixo")
+//         else
+//         menu.classList.remove("menuFixo")
+//     })
+//   })()
 
 
