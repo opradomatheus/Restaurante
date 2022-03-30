@@ -13,17 +13,17 @@
 
 showMenu('nav-toggle','nav-menu')
 
-/*ACTIVE AND REMOVE MENU*/
+/*Ativar e desativar menu*/
 
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
     
-    //Active link
+    //Link ativo
     navLink.forEach(n => n.classList.remove('active'))
     this.classList.add('active')   
 
-    //Remove menu mobile
+    //Remover menu ativo
     const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show')
 
@@ -31,23 +31,10 @@ function linkAction(){
 
 function removeMenu()
 {
+    //Remover menu ativo
     const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show')
 }
 
   
-
-
-
-// (function headerMuda() {
-//     var menu = document.getElementById("menu")
-  
-//     window.addEventListener("scroll", function () {
-//         if (scrollY > 0)
-//         menu.classList.add("menuFixo")
-//         else
-//         menu.classList.remove("menuFixo")
-//     })
-//   })()
-
 
