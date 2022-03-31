@@ -36,5 +36,15 @@ function removeMenu()
     navMenu.classList.remove('show')
 }
 
+//     function ScrollToTop()
+// {
+//     window.scrollTo
+//     ({
+//         top: 0,
+//         behavior: 'smooth'
+//     })
+// }
+
+
   
 
