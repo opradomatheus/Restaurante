@@ -7,4 +7,9 @@
         user-select: none;
         -webkit-user-drag: none;
     }
+
+    html {
+        font-size: 62,5%;
+    }
+    
     

@@ -45,7 +45,7 @@ html, body
 
 .zap:hover{
   animation-name: move;
-  animation-duration: .5s;
+  animation-duration: .3s;
   animation-iteration-count: 2;
   cursor: pointer;
 }
@@ -60,7 +60,7 @@ html, body
   
   to
   {
-    bottom: 3%;
+    bottom: 2.5%;
 }
 }
 
@@ -100,10 +100,10 @@ section.home
     padding-top: var(--header-height);
 }
 
-div.baccodecomer
+div.prato-do-dia-container
 {
     position: relative;
-    width: 1000px;
+    width: 800px;
     height: 600px;
 
     background: rgba(255, 255, 255, 0.1);
@@ -112,13 +112,17 @@ div.baccodecomer
 
     border-radius: 20px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 h2.prato-dia
 {
-    position: absolute;
-    left: 315px;
+    text-align: center;
+    width: 350px;
+    padding: 5px;
 
     font-family: var(--ff2);
     font-size: 52px;
@@ -129,22 +133,13 @@ h2.prato-dia
 
     background-color: rgba(252, 0, 0, 0.733);
 
-    padding: 0px 50px 5px 50px;
 
     border-radius: 0 0 50px 50px;
 }
 
-
-
-
-
-
 .decomer
 {
-    position: absolute;
 
-    top: 150px;
-    left: 215px;
     width: 550px;
     z-index: 3;
 
@@ -152,42 +147,6 @@ h2.prato-dia
     animation-name: slidein;
 }
 
-@keyframes slidein
-{
-    from
-    {
-        margin-left: 100%;
-    }
-
-    to
-    {
-        margin-left: 0%;
-    }
-}
-
-
-
-
-.ingredientes
-{
-    position: absolute;
-
-    top: 100px;
-    left: 230px;
-    display: flex;
-    flex-direction: column;
-
-    background-color: rgb(202, 0, 0);    
-
-    height: 300px;
-
-    padding: 10px;
-
-    border-radius: 10px;
-
-    animation-duration: 1s;
-    animation-name: slidein;
-}
 
 @keyframes slidein
 {
@@ -201,72 +160,11 @@ h2.prato-dia
         margin-left: 0%;
     }
 }
-
-
-
-.ingredientes li{
-    list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-    
-    text-transform: capitalize
-}
-
-.preco
-{
-    position: absolute;
-
-    top: 180px;
-    left: 650px;
-
-    background-color: #fbff00;
-
-    width: 180px;
-    height: 80px;
-
-    border-radius: 0px 50px 0px 50px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    z-index: 4;
-
-    animation-duration: 1s;
-    animation-name: slidein;
-}
-
-@keyframes slidein
-{
-    from
-    {
-        margin-left: 100%;
-    }
-
-    to
-    {
-        margin-left: 0%;
-    }
-}
-
-
-
-
-
-.preco span
-{
-    color: rgb(255, 0, 0);
-    font-family: var(--ff1);
-    font-size: 40px;
-
-    font-weight: 600;
-}
-
-
 
 
 section.quem-somos
 {
-    padding-top: 80px;
+    padding-top: 100px;
     min-height: 100vh;
 
     background-color: rgb(236, 236, 236);
@@ -310,6 +208,8 @@ section.quem-somos > h1
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .q1 img,
@@ -401,19 +301,20 @@ section.cardapio > h1
 .container-cardapio span
 {
     align-self: center;
+    color: white;
+  
 
     margin-top: 10px;
 
-    padding-left: 85px;
-    padding-right: 85px;
+    padding: 10px;
     padding-top: 1px;
     padding-bottom: 1px;
 
-    background-color: white;
 
     text-transform: uppercase;
 
     font-family: var(--ff1);
+    font-size: 1.3em;
 }
 
 .container-cardapio .logo
@@ -862,9 +763,8 @@ div.img
   }
   
 
-  @media screen and (max-width: 1050px){
-    .baccodecomer
-    {
+  @media screen and (max-width: 1050px) {
+   .prato-do-dia-container {
       display: none;
       visibility: hidden;
     }

@@ -23,7 +23,7 @@
     <title>Rango Bom - Seu restaurante preferido.</title>
   </head>
 
-  <body>
+  <body onload="dia()">
     <header id="menu" scroll="headerMuda()">
 
         <img class="logo-header" src="Img/prato.png" alt="" />
@@ -47,25 +47,11 @@
     </header>
 
     <section id="home" class="home">
-      <div class="baccodecomer">
-        <h2 class="prato-dia">segunda - feira</h2>
+      <div class="prato-do-dia-container">
 
-        <img class="decomer" src="Img/alaminuta.png" />
+        <h2 class="prato-dia" id="dia-semana">dia da semana</h2>
 
-        <div class="ingredientes">
-          <ul>
-            <li>arroz</li>
-            <li>feijão</li>
-            <li>bife de carne</li>
-            <li>ovo</li>
-            <li>fritas</li>
-            <li>salada</li>
-          </ul>
-        </div>
-
-        <div class="preco">
-          <span>R$ 18,50</span>
-        </div>
+        <img class="decomer" src="" id="prato-do-dia"/>
       </div>
     </section>
 
@@ -74,14 +60,14 @@
       
       <div class="container-quem-somos">
         <div class="q1">
-          <img src="Img/images.jpg" alt="">
+          <img src="Img/fachada.jpg" alt="">
           <div class="linha"></div>
           <h1>A EMPRESA</h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos deleniti magni quae quia, optio cum praesentium quo iure quisquam.</p>
         </div>
 
         <div class="q2">
-          <img src="Img/images.jpg" alt="">
+          <img src="Img/team.jpg" alt="">
           <div class="linha"></div>
           <h1>NOSSA EQUIPE</h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos deleniti magni quae quia, optio cum praesentium quo iure quisquam.</p>
@@ -106,7 +92,7 @@
             <p>rango bom</p>
           </div>
 
-          <span> burgers </span>
+          <span> Pratos do dia </span>
 
           <ul class="ul-cardapio">
             <li>BURGER .................... R$20,00</li>
@@ -128,7 +114,7 @@
         <div class="b">
           <img class="alaminuta" src="Img/prato.png" alt="" />
 
-          <img class="burger" src="Img/alaminuta.png" alt="" />
+          <img class="burger" src="Img/ala2.png" alt="" />
 
           <span> especiais </span>
 
