@@ -500,12 +500,18 @@ div.img
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.fa-facebook,
-.fa-instagram
+.fa-facebook.b4,
+.fa-instagram.b4
 {
     color: yellow;
     font-size: 1.2em;
     padding-right: 10px;
+}
+
+.fa-facebook.b4:hover,
+.fa-instagram.b4:hover
+{
+    color: yellow;
 }
 
 .referencias
@@ -530,7 +536,7 @@ div.img
 {
     width: 500px;
     padding-left: 200px;
-    margin-top: 80px;
+    margin-top: 10px;
 }
 
 .top-logo-footer
